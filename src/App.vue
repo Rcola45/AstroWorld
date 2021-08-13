@@ -1,15 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <img alt="Vue logo" src="./assets/images/logo.png">
+  <Space/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Space from './components/Space.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Space
+  },
+  created() {
+    // API Call
+
   }
 }
 </script>
@@ -20,7 +24,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: white;
   margin-top: 60px;
+}
+
+body {
+  background-color: #111111;
 }
 </style>
